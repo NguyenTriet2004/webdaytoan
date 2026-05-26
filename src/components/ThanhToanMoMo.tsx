@@ -19,7 +19,7 @@ export default function MoMoPayment({ onInitiatePayment }: MoMoPaymentProps) {
       
       {/* Radiant Glow overlays */}
       <div className="absolute top-1/4 right-[-10%] w-[500px] h-[500px] rounded-full bg-[#d21d78]/10 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[350px] h-[350px] rounded-full bg-blue-600/10 blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[350px] h-[350px] rounded-full bg-emerald-600/10 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -53,7 +53,7 @@ export default function MoMoPayment({ onInitiatePayment }: MoMoPaymentProps) {
               </div>
 
               <div className="flex items-center space-x-3.5 group">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-blue-600/20 group-hover:scale-105 transition-transform select-none">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-700 flex items-center justify-center text-white shadow-lg shadow-emerald-600/20 group-hover:scale-105 transition-transform select-none">
                   <Shield className="w-5 h-5" />
                 </div>
                 <div>

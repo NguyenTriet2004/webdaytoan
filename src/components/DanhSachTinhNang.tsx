@@ -3,7 +3,7 @@ import { FEATURES } from '../data';
 
 export default function FeaturesList() {
   const renderIcon = (name: string) => {
-    const classStyle = "w-6 h-6 text-blue-600";
+    const classStyle = "w-6 h-6 text-emerald-600";
     switch (name) {
       case 'Video':
         return <Video className={classStyle} />;
@@ -26,11 +26,11 @@ export default function FeaturesList() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {FEATURES.map((feat) => (
             <div key={feat.id} className="flex flex-col items-center text-center space-y-3 px-2 group">
-              <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100/50 group-hover:scale-105 group-hover:shadow-md transition-all duration-300">
+              <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100/50 group-hover:scale-105 group-hover:shadow-md transition-all duration-300">
                 {renderIcon(feat.iconName)}
               </div>
               <div className="space-y-1">
-                <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors font-display">
+                <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors font-display">
                   {feat.title}
                 </h4>
                 <p className="text-xs text-slate-500 leading-relaxed font-sans font-medium px-1">

@@ -33,7 +33,7 @@ export default function Footer({ onNavClick }: FooterProps) {
                 />
               </div>
               <span className="block text-base font-extrabold text-white tracking-tight font-display">
-                TOÁN HỌC <span className="text-blue-500">Thầy Nguyên</span>
+                TOÁN HỌC <span className="text-emerald-500">Thầy Nguyên</span>
               </span>
             </div>
 
@@ -46,7 +46,7 @@ export default function Footer({ onNavClick }: FooterProps) {
             <div className="flex items-center space-x-3.5 pt-1">
               <a
                 href="#"
-                className="w-8 h-8 rounded-full bg-slate-900 hover:bg-blue-600 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition-all"
+                className="w-8 h-8 rounded-full bg-slate-900 hover:bg-emerald-600 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition-all"
               >
                 <Facebook className="w-4 h-4" />
               </a>
@@ -77,7 +77,7 @@ export default function Footer({ onNavClick }: FooterProps) {
               <li>
                 <button
                   onClick={() => onNavClick("courses")}
-                  className="hover:text-blue-500 hover:underline cursor-pointer"
+                  className="hover:text-emerald-500 hover:underline cursor-pointer"
                 >
                   Khóa học lớp 9
                 </button>
@@ -85,7 +85,7 @@ export default function Footer({ onNavClick }: FooterProps) {
               <li>
                 <button
                   onClick={() => onNavClick("courses")}
-                  className="hover:text-blue-500 hover:underline cursor-pointer"
+                  className="hover:text-emerald-500 hover:underline cursor-pointer"
                 >
                   Khóa học THPT
                 </button>
@@ -93,7 +93,7 @@ export default function Footer({ onNavClick }: FooterProps) {
               <li>
                 <button
                   onClick={() => onNavClick("courses")}
-                  className="hover:text-blue-500 hover:underline cursor-pointer"
+                  className="hover:text-emerald-500 hover:underline cursor-pointer"
                 >
                   Luyện thi VSAT
                 </button>
@@ -101,7 +101,7 @@ export default function Footer({ onNavClick }: FooterProps) {
               <li>
                 <button
                   onClick={() => onNavClick("documents")}
-                  className="hover:text-blue-500 hover:underline cursor-pointer"
+                  className="hover:text-emerald-500 hover:underline cursor-pointer"
                 >
                   Tài liệu học tập
                 </button>
@@ -116,22 +116,22 @@ export default function Footer({ onNavClick }: FooterProps) {
             </h5>
             <ul className="space-y-2 text-xs font-medium text-slate-450">
               <li>
-                <a href="#" className="hover:text-blue-500 hover:underline">
+                <a href="#" className="hover:text-emerald-500 hover:underline">
                   Hướng dẫn học tập
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 hover:underline">
+                <a href="#" className="hover:text-emerald-500 hover:underline">
                   Câu hỏi thường gặp
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 hover:underline">
+                <a href="#" className="hover:text-emerald-500 hover:underline">
                   Chính sách bảo mật
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 hover:underline">
+                <a href="#" className="hover:text-emerald-500 hover:underline">
                   Điều khoản sử dụng
                 </a>
               </li>
@@ -145,17 +145,17 @@ export default function Footer({ onNavClick }: FooterProps) {
             </h5>
             <ul className="space-y-2 text-xs font-medium text-slate-450">
               <li className="flex items-start">
-                <Mail className="w-4 h-4 mr-2.5 text-blue-500 flex-shrink-0 mt-0.5" />
+                <Mail className="w-4 h-4 mr-2.5 text-emerald-500 flex-shrink-0 mt-0.5" />
                 <span className="break-all select-all">
                   info@toanhocthaynguyen.vn
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="w-4 h-4 mr-2.5 text-blue-500 flex-shrink-0" />
+                <Phone className="w-4 h-4 mr-2.5 text-emerald-500 flex-shrink-0" />
                 <span className="select-all">0945 538 554</span>
               </li>
               <li className="flex items-start">
-                <MapPin className="w-4 h-4 mr-2.5 text-blue-500 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 mr-2.5 text-emerald-500 flex-shrink-0 mt-0.5" />
                 <span>Địa chỉ: Hà Nội, Việt Nam</span>
               </li>
             </ul>
@@ -171,7 +171,7 @@ export default function Footer({ onNavClick }: FooterProps) {
 
           <button
             onClick={handleScrollToTop}
-            className="flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 hover:bg-blue-600 hover:text-white transition-all cursor-pointer"
+            className="flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 hover:bg-emerald-600 hover:text-white transition-all cursor-pointer"
             title="Cuộn lên đầu trang"
           >
             <ArrowUp className="w-4 h-4" />

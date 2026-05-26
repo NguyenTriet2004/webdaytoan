@@ -165,7 +165,7 @@ export default function VideoModal({
         {/* Header toolbar - ALWAYS PINPED & VISIBLE AT THE VERY TOP */}
         <div className="px-6 py-4 bg-slate-950 border-b border-slate-800 flex items-center justify-between flex-shrink-0">
           <div className="flex items-center space-x-2.5">
-            <span className="bg-blue-600 text-white font-display text-[9px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+            <span className="bg-emerald-600 text-white font-display text-[9px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
               {category}
             </span>
             <span className="hidden sm:inline text-slate-400 text-xs font-mono select-none">Bảo mật DRM/HLS • Mã hóa luồng phát chống tải lậu</span>
@@ -173,7 +173,7 @@ export default function VideoModal({
           <div className="flex items-center space-x-3">
             <button 
               onClick={onClose}
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-500 hover:scale-[1.03] active:scale-[0.97] text-white font-black text-xs rounded-xl flex items-center space-x-2 transition-all cursor-pointer shadow-lg shadow-blue-500/20 border border-blue-500/25"
+              className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 hover:scale-[1.03] active:scale-[0.97] text-white font-black text-xs rounded-xl flex items-center space-x-2 transition-all cursor-pointer shadow-lg shadow-emerald-500/20 border border-emerald-500/25"
             >
               <Home className="w-4 h-4" />
               <span>Trở lại trang chủ</span>
@@ -248,7 +248,7 @@ export default function VideoModal({
                               href={activeUrl}
                               target="_blank"
                               rel="noreferrer"
-                              className="bg-blue-600 hover:bg-blue-500 text-white font-bold text-[10px] sm:text-xs uppercase px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl transition-all cursor-pointer"
+                              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[10px] sm:text-xs uppercase px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl transition-all cursor-pointer"
                             >
                               Mở trực tiếp luồng ↗
                             </a>
@@ -286,10 +286,10 @@ export default function VideoModal({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="w-full flex items-center justify-center space-x-2.5 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-600 hover:from-blue-600 hover:to-blue-500 hover:scale-[1.02] active:scale-[0.98] text-white font-black text-xs uppercase tracking-wider transition-all cursor-pointer shadow-xl shadow-blue-500/20 border border-blue-400/30 relative overflow-hidden group"
+                  className="w-full flex items-center justify-center space-x-2.5 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-700 to-emerald-600 hover:from-emerald-600 hover:to-emerald-500 hover:scale-[1.02] active:scale-[0.98] text-white font-black text-xs uppercase tracking-wider transition-all cursor-pointer shadow-xl shadow-emerald-500/20 border border-emerald-400/30 relative overflow-hidden group"
                 >
                   <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-                  <Home className="w-4 h-4 text-blue-105" />
+                  <Home className="w-4 h-4 text-emerald-100" />
                   <span>Quay lại trang chủ</span>
                   <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping absolute right-4" />
                 </button>
@@ -312,9 +312,9 @@ export default function VideoModal({
               </div>
 
               {activeUrl && extractYoutubeVideoId(activeUrl) && (
-                <div className="p-3 bg-blue-500/5 border border-blue-500/15 rounded-2xl flex items-center justify-between text-left font-sans animate-fade-in">
+                <div className="p-3 bg-emerald-500/5 border border-emerald-500/15 rounded-2xl flex items-center justify-between text-left font-sans animate-fade-in">
                   <div className="flex items-center space-x-2">
-                    <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
                     <span className="text-[11px] text-slate-400 leading-normal">
                       Học viên lưu ý: Nếu video không phát được trong iFrame do quy định bảo mật trình duyệt, vui lòng nhấn nút "Xem trực tiếp trên YouTube ↗" ở trên.
                     </span>
@@ -336,7 +336,7 @@ export default function VideoModal({
             <div className="space-y-4 font-sans text-left">
               <div className="flex items-center justify-between border-b border-slate-800 pb-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-200 flex items-center">
-                  <MessageSquare className="w-4 h-4 mr-1.5 text-blue-400" />
+                  <MessageSquare className="w-4 h-4 mr-1.5 text-emerald-400" />
                   Hỏi đáp & Thảo luận ({comments.length})
                 </span>
                 <span className="text-[10px] text-slate-500 italic">Ý kiến sẽ được hiển thị ngay lập tức!</span>
@@ -350,11 +350,11 @@ export default function VideoModal({
                   placeholder="Gửi câu hỏi của bạn cho Thầy Nguyên..."
                   value={newCommentText}
                   onChange={(e) => setNewCommentText(e.target.value)}
-                  className="flex-1 bg-slate-950 border border-slate-850 focus:border-blue-500 rounded-xl px-4 py-2.5 text-xs placeholder-slate-700 outline-none text-slate-200"
+                  className="flex-1 bg-slate-950 border border-slate-850 focus:border-emerald-500 rounded-xl px-4 py-2.5 text-xs placeholder-slate-700 outline-none text-slate-200"
                 />
                 <button
                   type="submit"
-                  className="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase cursor-pointer px-5 rounded-xl flex items-center space-x-1 transition-colors flex-shrink-0"
+                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase cursor-pointer px-5 rounded-xl flex items-center space-x-1 transition-colors flex-shrink-0"
                 >
                   <Send className="w-3.5 h-3.5" />
                   <span>Hỏi Thầy</span>
@@ -404,10 +404,10 @@ export default function VideoModal({
                 onClick={() => {
                   downloadFile(null, title + " Giáo Trình", "PDF");
                 }}
-                className="w-full flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-blue-500 hover:bg-slate-850 text-left transition-all active:scale-98 cursor-pointer group"
+                className="w-full flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500 hover:bg-slate-850 text-left transition-all active:scale-98 cursor-pointer group"
               >
                 <div className="flex items-center space-x-2.5">
-                  <div className="p-1.5 h-8 w-8 bg-blue-500/10 text-blue-400 rounded-lg flex items-center justify-center">
+                  <div className="p-1.5 h-8 w-8 bg-emerald-500/10 text-emerald-400 rounded-lg flex items-center justify-center">
                     <Download className="w-4 h-4" />
                   </div>
                   <div>
@@ -465,8 +465,8 @@ export default function VideoModal({
               <h5 className="text-xs font-bold uppercase tracking-widest text-slate-400 font-display">Video Giáo trình Khác</h5>
               
               <div className="space-y-2 max-h-52 overflow-y-auto pr-1">
-                <div className="p-2.5 rounded-lg bg-blue-600/10 border border-blue-500/25 text-left">
-                  <span className="block text-[10px] font-bold text-blue-400 uppercase tracking-widest leading-none font-display mb-1 text-left">Đang xem</span>
+                <div className="p-2.5 rounded-lg bg-emerald-600/10 border border-emerald-500/25 text-left">
+                  <span className="block text-[10px] font-bold text-emerald-400 uppercase tracking-widest leading-none font-display mb-1 text-left">Đang xem</span>
                   <span className="block text-xs font-bold text-slate-200 line-clamp-1">{title}</span>
                 </div>
 
@@ -484,7 +484,7 @@ export default function VideoModal({
 
             {/* Verification secure prompt */}
             <div className="p-4 bg-slate-900/50 border border-slate-850 rounded-xl flex items-start space-x-2.5">
-              <ShieldAlert className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
+              <ShieldAlert className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
               <p className="text-[10px] text-slate-400 leading-normal font-sans">
                 Đặc quyền học viên: Hãy tải tài liệu PDF và video MP4 trực tiếp về máy để lưu trữ và học tập tiện lợi mọi lúc mọi nơi kể cả khi không có kết nối mạng Internet.
               </p>

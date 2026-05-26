@@ -17,7 +17,7 @@ export default function LatestLectures({ onSelectLecture, onExploreLectures, lec
         {/* Header section block */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div className="space-y-3">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#2563eb] font-display">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#16a34a] font-display">
               BÀI GIẢNG MỚI NHẤT
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#060913] tracking-tight font-display">
@@ -29,7 +29,7 @@ export default function LatestLectures({ onSelectLecture, onExploreLectures, lec
           </div>
           <button
             onClick={onExploreLectures}
-            className="group flex items-center text-sm font-semibold text-blue-600 hover:text-blue-500 hover:underline transition-all cursor-pointer whitespace-nowrap self-start md:self-end"
+            className="group flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-500 hover:underline transition-all cursor-pointer whitespace-nowrap self-start md:self-end"
           >
             Xem tất cả bài giảng
             <span className="ml-1.5 transform group-hover:translate-x-1 transition-transform">→</span>
@@ -59,13 +59,13 @@ export default function LatestLectures({ onSelectLecture, onExploreLectures, lec
                 </span>
 
                 {/* Category tag */}
-                <span className="absolute top-2.5 left-2.5 bg-blue-600/95 backdrop-blur-sm text-white text-[9px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider font-display">
+                <span className="absolute top-2.5 left-2.5 bg-emerald-600/95 backdrop-blur-sm text-white text-[9px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider font-display">
                   {item.category}
                 </span>
 
                 {/* Play circle overlay */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                  <span className="w-12 h-12 bg-blue-600 hover:bg-blue-500 text-white rounded-full flex items-center justify-center shadow-lg transform scale-90 group-hover:scale-100 transition-all duration-300">
+                  <span className="w-12 h-12 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-lg transform scale-90 group-hover:scale-100 transition-all duration-300">
                     <Play className="w-5 h-5 fill-current ml-0.5" />
                   </span>
                 </div>
@@ -73,7 +73,7 @@ export default function LatestLectures({ onSelectLecture, onExploreLectures, lec
 
               {/* Card Body */}
               <div className="p-4 sm:p-5 flex-grow flex flex-col justify-between space-y-4 text-left">
-                <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug font-display">
+                <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors line-clamp-2 leading-snug font-display">
                   {item.title}
                 </h4>
 
@@ -95,7 +95,7 @@ export default function LatestLectures({ onSelectLecture, onExploreLectures, lec
                       e.stopPropagation();
                       downloadFile(null, item.title + " Bài Tập", "PDF");
                     }}
-                    className="p-1.5 hover:bg-blue-50 text-slate-400 hover:text-blue-600 rounded-lg transition-colors cursor-pointer"
+                    className="p-1.5 hover:bg-emerald-50 text-slate-400 hover:text-emerald-600 rounded-lg transition-colors cursor-pointer"
                     title="Tải tài liệu PDF bài tập kèm theo"
                   >
                     <Download className="w-4 h-4" />

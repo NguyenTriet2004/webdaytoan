@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import FeaturesList from "./components/FeaturesList";
-import FeaturedCourses from "./components/FeaturedCourses";
-import TeachingMethods from "./components/TeachingMethods";
-import LatestLectures from "./components/LatestLectures";
-import LatestBlogs from "./components/LatestBlogs";
-import MoMoPayment from "./components/MoMoPayment";
-import CTABanner from "./components/CTABanner";
-import Footer from "./components/Footer";
+import Header from "./components/DauTrang";
+import Hero from "./components/BannerChinh";
+import FeaturesList from "./components/DanhSachTinhNang";
+import FeaturedCourses from "./components/KhoaHocNoiBat";
+import TeachingMethods from "./components/PhuongPhapGiangDay";
+import LatestLectures from "./components/BaiGiangMoiNhat";
+import LatestBlogs from "./components/BaiVietMoiNhat";
+import MoMoPayment from "./components/ThanhToanMoMo";
+import CTABanner from "./components/BannerKeuGoi";
+import Footer from "./components/ChanTrang";
 import { saveDocumentFile, deleteDocumentFile } from "./utils/db";
 import { db } from "./lib/firebase";
 import {
@@ -23,12 +23,12 @@ import {
 } from "firebase/firestore";
 
 // Modals
-import AuthModal from "./components/AuthModal";
-import PaymentModal from "./components/PaymentModal";
-import VideoModal from "./components/VideoModal";
-import TeacherDashboard from "./components/TeacherDashboard";
-import LecturesPage from "./components/LecturesPage";
-import BlogDetailModal from "./components/BlogDetailModal";
+import AuthModal from "./components/ModalDangNhap";
+import PaymentModal from "./components/ModalThanhToan";
+import VideoModal from "./components/ModalVideo";
+import TeacherDashboard from "./components/BangDieuKhienGiaoVien";
+import LecturesPage from "./components/TrangBaiGiang";
+import BlogDetailModal from "./components/ModalChiTietBlog";
 
 // Data
 import { LECTURES, COURSES, BLOGS } from "./data";

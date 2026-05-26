@@ -16,7 +16,7 @@ export default function LatestBlogs({ blogs, onSelectBlog, onExploreBlogs }: Lat
         {/* Blog Header block */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div className="space-y-3 animate-fade-in text-left">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 font-display">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-emerald-600 font-display">
               KIẾN THỨC HAY
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#060913] tracking-tight font-display">
@@ -28,7 +28,7 @@ export default function LatestBlogs({ blogs, onSelectBlog, onExploreBlogs }: Lat
           </div>
           <button
             onClick={onExploreBlogs}
-            className="group flex items-center text-sm font-semibold text-blue-600 hover:text-blue-500 hover:underline transition-all cursor-pointer whitespace-nowrap self-start md:self-end"
+            className="group flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-500 hover:underline transition-all cursor-pointer whitespace-nowrap self-start md:self-end"
           >
             Xem tất cả bài viết
             <ArrowRight className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" />
@@ -38,7 +38,7 @@ export default function LatestBlogs({ blogs, onSelectBlog, onExploreBlogs }: Lat
         {/* 4 Cards Grid or fallback */}
         {blogs.length === 0 ? (
           <div className="py-12 bg-white border border-slate-150 rounded-3xl text-center max-w-sm mx-auto space-y-3.5 shadow-sm">
-            <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto">
+            <div className="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto">
               <svg xmlns="http://www.w3.org/2005/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
@@ -76,7 +76,7 @@ export default function LatestBlogs({ blogs, onSelectBlog, onExploreBlogs }: Lat
                 {/* Blog info */}
                 <div className="p-5 flex-grow flex flex-col justify-between space-y-3">
                   <div className="space-y-2">
-                    <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug font-display">
+                    <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors line-clamp-2 leading-snug font-display">
                       {blog.title}
                     </h4>
                     <p className="text-xs text-slate-500 line-clamp-3 leading-relaxed">
@@ -91,7 +91,7 @@ export default function LatestBlogs({ blogs, onSelectBlog, onExploreBlogs }: Lat
                       <span>{blog.timeLeft}</span>
                     </div>
                     
-                    <span className="text-[11px] font-semibold text-blue-600 group-hover:underline flex items-center">
+                    <span className="text-[11px] font-semibold text-emerald-600 group-hover:underline flex items-center">
                       Đọc thêm <span className="ml-0.5 group-hover:translate-x-0.5 transition-transform">→</span>
                     </span>
                   </div>

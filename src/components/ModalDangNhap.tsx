@@ -143,12 +143,12 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
                 {mode === 'login' ? 'Đăng nhập thành công!' : 'Đăng ký học viên thành công!'}
               </h3>
               <p className="text-xs text-slate-400 leading-relaxed font-sans font-medium">
-                Chào mừng <span className="font-bold text-blue-400">{registeredUser?.name}</span> đến với Nền tảng học Toán online Thầy Nguyên. Tiến độ của bạn đã được kích hoạt.
+                Chào mừng <span className="font-bold text-emerald-400">{registeredUser?.name}</span> đến với Nền tảng học Toán online Thầy Nguyên. Tiến độ của bạn đã được kích hoạt.
               </p>
             </div>
             <button
               onClick={handleFinishSuccess}
-              className="w-full bg-blue-600 hover:bg-blue-500 text-white py-3 font-semibold rounded-xl shadow-lg transition-colors cursor-pointer text-sm"
+              className="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-3 font-semibold rounded-xl shadow-lg transition-colors cursor-pointer text-sm"
             >
               Học ngay
             </button>
@@ -158,7 +158,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
             
             {/* Header Identity */}
             <div className="text-center space-y-2 select-none">
-              <div className="w-11 h-11 bg-blue-600 rounded-2xl flex items-center justify-center text-white mx-auto shadow-md">
+              <div className="w-11 h-11 bg-emerald-600 rounded-2xl flex items-center justify-center text-white mx-auto shadow-md">
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div>
@@ -217,7 +217,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
                           placeholder="Nguyễn Văn A"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-800 focus:border-blue-500 rounded-xl px-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
+                          className="w-full bg-slate-900 border border-slate-800 focus:border-emerald-500 rounded-xl px-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
                         />
                       </div>
                     )}
@@ -230,7 +230,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
                         placeholder="hocvien@gmail.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full bg-slate-900 border border-slate-800 focus:border-blue-500 rounded-xl px-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
+                        className="w-full bg-slate-900 border border-slate-800 focus:border-emerald-500 rounded-xl px-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
                       />
                     </div>
 
@@ -242,7 +242,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
                         placeholder="••••••••"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="w-full bg-slate-900 border border-slate-800 focus:border-blue-500 rounded-xl px-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
+                        className="w-full bg-slate-900 border border-slate-800 focus:border-emerald-500 rounded-xl px-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
                       />
                     </div>
                   </>
@@ -261,7 +261,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
                           placeholder="Nhập ví dụ: 0945538554"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))}
-                          className="w-full bg-slate-900 border border-slate-800 focus:border-blue-500 disabled:opacity-50 rounded-xl pl-11 pr-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
+                          className="w-full bg-slate-900 border border-slate-800 focus:border-emerald-500 disabled:opacity-50 rounded-xl pl-11 pr-4 py-3 text-xs placeholder-slate-600 outline-none transition-colors text-white"
                         />
                       </div>
                     </div>
@@ -293,7 +293,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
                     <select
                       value={grade}
                       onChange={(e) => setGrade(e.target.value)}
-                      className="w-full bg-slate-900 border border-slate-800 focus:border-blue-500 rounded-xl px-3.5 py-3 text-xs outline-none transition-colors text-slate-300 pointer-events-auto"
+                      className="w-full bg-slate-900 border border-slate-800 focus:border-emerald-500 rounded-xl px-3.5 py-3 text-xs outline-none transition-colors text-slate-300 pointer-events-auto"
                     >
                       <option value="toan9" className="bg-slate-950">Toán lớp 9 (Ôn thi vào 10)</option>
                       <option value="toanthpt" className="bg-slate-950">Toán trung học phổ thông (THPT)</option>
@@ -304,7 +304,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-500 active:scale-98 text-white py-3.5 rounded-xl font-bold text-xs shadow-lg shadow-blue-600/20 transition-all uppercase tracking-wider mt-2 cursor-pointer"
+                  className="w-full bg-emerald-600 hover:bg-emerald-500 active:scale-98 text-white py-3.5 rounded-xl font-bold text-xs shadow-lg shadow-emerald-600/20 transition-all uppercase tracking-wider mt-2 cursor-pointer"
                 >
                   {authType === 'phone'
                     ? isOtpSent
@@ -330,7 +330,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
                 <button
                   type="button"
                   onClick={() => handleSocialAuth('facebook')}
-                  className="w-full flex items-center justify-center space-x-3 p-3 rounded-xl bg-[#1877f2]/10 border border-[#1877f2]/20 hover:bg-[#1877f2] hover:text-white active:scale-95 transition-all text-xs font-bold text-[#1877f2] cursor-pointer"
+                  className="w-full flex items-center justify-center space-x-3 p-3 rounded-xl bg-[#16a34a]/10 border border-[#16a34a]/20 hover:bg-[#16a34a] hover:text-white active:scale-95 transition-all text-xs font-bold text-[#16a34a] cursor-pointer"
                 >
                   <Facebook className="w-4 h-4" />
                   <span>Đăng nhập qua Facebook ID</span>
@@ -346,7 +346,7 @@ export default function AuthModal({ isOpen, onClose, defaultMode, onAuthSuccess 
             <div className="text-center pt-2">
               <button
                 onClick={() => setMode(mode === 'login' ? 'register' : 'login')}
-                className="text-xs text-blue-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none"
+                className="text-xs text-emerald-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none"
               >
                 {mode === 'login' ? 'Chưa có tài khoản? Nhấn để Đăng ký học viên' : 'Đã đăng ký tài khoản? Đăng nhập tại đây'}
               </button>

@@ -414,7 +414,7 @@ export default function TeacherDashboard({
               />
             </div>
             <div className="text-left">
-              <span className="block text-[10px] uppercase font-bold text-blue-400 tracking-widest font-mono leading-none mb-1">
+              <span className="block text-[10px] uppercase font-bold text-emerald-400 tracking-widest font-mono leading-none mb-1">
                 Quản Trị Viên
               </span>
               <h3 className="text-base font-extrabold text-white font-display uppercase tracking-tight leading-none">
@@ -424,8 +424,8 @@ export default function TeacherDashboard({
           </div>
 
           <div className="flex items-center space-x-4">
-            <div className="hidden sm:flex items-center bg-blue-500/10 border border-blue-500/20 px-3.5 py-1.5 rounded-full select-none">
-              <span className="text-xs text-blue-300 font-semibold font-mono tracking-wide">
+            <div className="hidden sm:flex items-center bg-emerald-500/10 border border-emerald-500/20 px-3.5 py-1.5 rounded-full select-none">
+              <span className="text-xs text-emerald-300 font-semibold font-mono tracking-wide">
                 Quy mô: {statsSummary.activeCount} học sinh thực tế
               </span>
             </div>
@@ -443,7 +443,7 @@ export default function TeacherDashboard({
           {/* Dashboard Metrics Cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800 flex items-center space-x-4 select-none">
-              <div className="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 border border-blue-500/20">
+              <div className="w-11 h-11 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20">
                 <Users className="w-5 h-5" />
               </div>
               <div className="text-left">
@@ -471,7 +471,7 @@ export default function TeacherDashboard({
             </div>
 
             <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800 flex items-center space-x-4 select-none">
-              <div className="w-11 h-11 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20">
+              <div className="w-11 h-11 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20">
                 <BookOpen className="w-5 h-5" />
               </div>
               <div className="text-left">
@@ -505,7 +505,7 @@ export default function TeacherDashboard({
               onClick={() => setActiveTab("lectures")}
               className={`pb-3 text-sm font-bold uppercase tracking-wider transition-all cursor-pointer ${
                 activeTab === "lectures"
-                  ? "text-blue-400 border-b-2 border-blue-400"
+                  ? "text-emerald-400 border-b-2 border-emerald-400"
                   : "text-slate-500 hover:text-slate-300"
               }`}
             >
@@ -518,7 +518,7 @@ export default function TeacherDashboard({
               }}
               className={`pb-3 text-sm font-bold uppercase tracking-wider transition-all cursor-pointer ${
                 activeTab === "blogs"
-                  ? "text-blue-400 border-b-2 border-blue-400"
+                  ? "text-emerald-400 border-b-2 border-emerald-400"
                   : "text-slate-500 hover:text-slate-300"
               }`}
             >
@@ -528,7 +528,7 @@ export default function TeacherDashboard({
               onClick={() => setActiveTab("documents")}
               className={`pb-3 text-sm font-bold uppercase tracking-wider transition-all cursor-pointer ${
                 activeTab === "documents"
-                  ? "text-blue-400 border-b-2 border-blue-400"
+                  ? "text-emerald-400 border-b-2 border-emerald-400"
                   : "text-slate-500 hover:text-slate-300"
               }`}
             >
@@ -543,7 +543,7 @@ export default function TeacherDashboard({
                 {/* Left Form: Video lecture publisher */}
                 <div className="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-5">
                   <div className="flex items-center space-x-2 border-b border-slate-800 pb-3 text-left">
-                    <Video className="w-5 h-5 text-blue-500" />
+                    <Video className="w-5 h-5 text-emerald-500" />
                     <h4 className="text-sm font-bold text-slate-100 font-display uppercase tracking-tight">
                       Đăng Tải Bài Giảng Mới
                     </h4>
@@ -563,7 +563,7 @@ export default function TeacherDashboard({
                       onClick={() => setUploadSource("youtube")}
                       className={`py-2 text-[10px] font-bold rounded-lg transition-all cursor-pointer ${
                         uploadSource === "youtube"
-                          ? "bg-blue-600 text-white shadow"
+                          ? "bg-emerald-600 text-white shadow"
                           : "text-slate-400 hover:text-white hover:bg-slate-900"
                       }`}
                     >
@@ -574,7 +574,7 @@ export default function TeacherDashboard({
                       onClick={() => setUploadSource("file")}
                       className={`py-2 text-[10px] font-bold rounded-lg transition-all cursor-pointer ${
                         uploadSource === "file"
-                          ? "bg-blue-600 text-white shadow"
+                          ? "bg-emerald-600 text-white shadow"
                           : "text-slate-400 hover:text-white hover:bg-slate-900"
                       }`}
                     >
@@ -593,7 +593,7 @@ export default function TeacherDashboard({
                         placeholder="Ví dụ: Chuyên khảo Đồ thị Hàm số bậc hai nâng cao"
                         value={lectureTitle}
                         onChange={(e) => setLectureTitle(e.target.value)}
-                        className="w-full bg-slate-950 border border-slate-800 focus:border-blue-500 rounded-xl px-4 py-2.5 text-xs text-slate-200 outline-none font-sans"
+                        className="w-full bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded-xl px-4 py-2.5 text-xs text-slate-200 outline-none font-sans"
                       />
                     </div>
 
@@ -655,7 +655,7 @@ export default function TeacherDashboard({
                           }
                           className={`relative border-2 border-dashed rounded-2xl p-6 flex flex-col items-center justify-center text-center cursor-pointer transition-all ${
                             isDragActive
-                              ? "border-blue-500 bg-blue-500/5"
+                              ? "border-emerald-500 bg-emerald-500/5"
                               : localVideoFile
                                 ? "border-emerald-500 bg-emerald-500/5"
                                 : "border-slate-800 hover:border-slate-700 bg-slate-950/40"
@@ -727,7 +727,7 @@ export default function TeacherDashboard({
                           placeholder="Dán link ví dụ: https://www.youtube.com/watch?v=gAnD_Hj0fX8"
                           value={lectureYoutubeUrl}
                           onChange={(e) => setLectureYoutubeUrl(e.target.value)}
-                          className="w-full bg-slate-950 border border-slate-800 text-xs rounded-xl px-4 py-2.5 text-white focus:border-blue-500 outline-none font-mono placeholder:text-slate-700"
+                          className="w-full bg-slate-950 border border-slate-800 text-xs rounded-xl px-4 py-2.5 text-white focus:border-emerald-500 outline-none font-mono placeholder:text-slate-700"
                         />
                       </div>
                     )}
@@ -742,7 +742,7 @@ export default function TeacherDashboard({
                         placeholder="Hình nền bài học..."
                         value={lectureThumbnail}
                         onChange={(e) => setLectureThumbnail(e.target.value)}
-                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-slate-300 outline-none font-mono focus:border-blue-500"
+                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-slate-300 outline-none font-mono focus:border-emerald-500"
                       />
                     </div>
 
@@ -753,7 +753,7 @@ export default function TeacherDashboard({
                           alt="Preview lecture background"
                           className="w-full h-full object-cover rounded-lg"
                         />
-                        <div className="absolute top-2 left-2 bg-blue-600 text-white font-mono text-[8px] font-black px-2 py-0.5 rounded tracking-wide uppercase">
+                        <div className="absolute top-2 left-2 bg-emerald-600 text-white font-mono text-[8px] font-black px-2 py-0.5 rounded tracking-wide uppercase">
                           Ảnh nền bài học
                         </div>
                       </div>
@@ -762,14 +762,14 @@ export default function TeacherDashboard({
                     {isUploading ? (
                       <div className="space-y-2 pt-2 text-left font-sans">
                         <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-400 font-mono">
-                          <span className="animate-pulse text-blue-400">
+                          <span className="animate-pulse text-emerald-400">
                             Đang mã hoá video học...
                           </span>
                           <span>{Math.round(uploadProgress)}%</span>
                         </div>
                         <div className="w-full h-1.5 bg-slate-950 rounded-full overflow-hidden">
                           <div
-                            className="h-full bg-gradient-to-r from-blue-600 to-indigo-500 transition-all duration-150 ease-out"
+                            className="h-full bg-gradient-to-r from-emerald-600 to-emerald-600 transition-all duration-150 ease-out"
                             style={{ width: `${uploadProgress}%` }}
                           />
                         </div>
@@ -777,7 +777,7 @@ export default function TeacherDashboard({
                     ) : (
                       <button
                         type="submit"
-                        className="w-full bg-blue-600 hover:bg-blue-500 active:scale-98 text-white font-bold py-3 text-xs rounded-xl shadow-lg shadow-blue-600/20 uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-1.5 font-sans"
+                        className="w-full bg-emerald-600 hover:bg-emerald-500 active:scale-98 text-white font-bold py-3 text-xs rounded-xl shadow-lg shadow-emerald-600/20 uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-1.5 font-sans"
                       >
                         <Plus className="w-4 h-4" />
                         <span>Xác nhận đăng bài giảng</span>
@@ -835,7 +835,7 @@ export default function TeacherDashboard({
                         setSearchTerm(e.target.value);
                         setCurrentPage(1);
                       }}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-11 pr-4 py-3 placeholder-slate-600 text-xs outline-none focus:border-blue-500 text-slate-200"
+                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-11 pr-4 py-3 placeholder-slate-600 text-xs outline-none focus:border-emerald-500 text-slate-200"
                     />
                   </div>
 
@@ -949,7 +949,7 @@ export default function TeacherDashboard({
                                     }
                                     className={`p-1.5 rounded-lg border transition-colors cursor-pointer ${
                                       std.active
-                                        ? "border-blue-500/20 text-blue-450 hover:bg-blue-500/10"
+                                        ? "border-emerald-500/20 text-emerald-400 hover:bg-emerald-500/10"
                                         : "border-slate-800 text-slate-650 hover:bg-slate-800"
                                     }`}
                                     title={
@@ -1028,7 +1028,7 @@ export default function TeacherDashboard({
               <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 mt-8 space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-800 pb-3 gap-2 text-left">
                   <div className="flex items-center space-x-2">
-                    <Video className="w-5 h-5 text-blue-500" />
+                    <Video className="w-5 h-5 text-emerald-500" />
                     <h4 className="text-sm font-bold text-slate-100 font-display uppercase tracking-tight">
                       Danh sách bài giảng video đang phát hành (
                       {lectures.length} bài học)
@@ -1061,14 +1061,14 @@ export default function TeacherDashboard({
                             alt={lecture.title}
                             className="w-full h-full object-cover group-hover:scale-102 transition-transform"
                           />
-                          <span className="absolute top-1 left-1 bg-blue-600 text-white text-[8px] font-mono px-1.5 py-0.2 rounded font-black uppercase">
+                          <span className="absolute top-1 left-1 bg-emerald-600 text-white text-[8px] font-mono px-1.5 py-0.2 rounded font-black uppercase">
                             {lecture.category}
                           </span>
                         </div>
 
                         <div className="flex-1 min-w-0 pr-6 flex flex-col justify-between">
                           <div>
-                            <h5 className="text-xs font-bold text-slate-200 line-clamp-2 leading-snug group-hover:text-blue-400 transition-colors">
+                            <h5 className="text-xs font-bold text-slate-200 line-clamp-2 leading-snug group-hover:text-emerald-400 transition-colors">
                               {lecture.title}
                             </h5>
                             <span className="block text-[9px] text-slate-500 font-mono mt-1 truncate max-w-[150px]">
@@ -1111,7 +1111,7 @@ export default function TeacherDashboard({
               {/* Left Form: Publish/Edit Blog Post */}
               <div className="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-4">
                 <div className="flex items-center space-x-2 border-b border-slate-800 pb-3">
-                  <BookOpen className="w-5 h-5 text-blue-500" />
+                  <BookOpen className="w-5 h-5 text-emerald-500" />
                   <h4 className="text-sm font-bold text-slate-100 font-display uppercase tracking-tight">
                     {editingBlogId
                       ? "Sửa bài viết cẩm nang"
@@ -1142,7 +1142,7 @@ export default function TeacherDashboard({
                       placeholder="VD: Bí thuật phân tích đa thức thành nhân tử siêu tốc..."
                       value={blogTitle}
                       onChange={(e) => setBlogTitle(e.target.value)}
-                      className="w-full bg-slate-950 border border-slate-800 focus:border-blue-500 rounded-xl px-4 py-2.5 text-xs text-slate-200 outline-none font-sans"
+                      className="w-full bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded-xl px-4 py-2.5 text-xs text-slate-200 outline-none font-sans"
                     />
                   </div>
 
@@ -1182,7 +1182,7 @@ export default function TeacherDashboard({
                           }
                           className="w-full text-center bg-slate-950 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 text-[11px] px-3 py-2.5 rounded-xl cursor-pointer transition-all font-semibold font-sans flex items-center justify-center space-x-1.5"
                         >
-                          <Upload className="w-3.5 h-3.5 text-blue-400" />
+                          <Upload className="w-3.5 h-3.5 text-emerald-400" />
                           <span>Tải ảnh từ máy tính</span>
                         </button>
 
@@ -1233,7 +1233,7 @@ export default function TeacherDashboard({
                       placeholder="Nội dung tóm tắt ngắn truyền động lực học dạng Toán này cho học sinh..."
                       value={blogSummary}
                       onChange={(e) => setBlogSummary(e.target.value)}
-                      className="w-full bg-slate-950 border border-slate-800 focus:border-blue-500 rounded-xl px-4 py-2 text-xs text-slate-200 outline-none resize-none font-sans"
+                      className="w-full bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded-xl px-4 py-2 text-xs text-slate-200 outline-none resize-none font-sans"
                     />
                   </div>
 
@@ -1247,7 +1247,7 @@ export default function TeacherDashboard({
                       placeholder="Trình bày kiến thức chi tiết, đề bài kèm công thức giải nhanh..."
                       value={blogContent}
                       onChange={(e) => setBlogContent(e.target.value)}
-                      className="w-full bg-slate-950 border border-slate-800 focus:border-blue-500 rounded-xl px-4 py-2.5 text-xs text-slate-200 outline-none resize-none font-sans leading-relaxed text-left"
+                      className="w-full bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded-xl px-4 py-2.5 text-xs text-slate-200 outline-none resize-none font-sans leading-relaxed text-left"
                     />
                   </div>
 
@@ -1263,7 +1263,7 @@ export default function TeacherDashboard({
                     )}
                     <button
                       type="submit"
-                      className={`bg-blue-600 hover:bg-blue-500 active:scale-98 text-white font-bold py-2.5 text-xs rounded-xl shadow-lg shadow-blue-600/20 uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-1.5 font-sans ${
+                      className={`bg-emerald-600 hover:bg-emerald-500 active:scale-98 text-white font-bold py-2.5 text-xs rounded-xl shadow-lg shadow-emerald-600/20 uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-1.5 font-sans ${
                         editingBlogId ? "w-2/3" : "w-full"
                       }`}
                     >
@@ -1303,10 +1303,10 @@ export default function TeacherDashboard({
                             referrerPolicy="no-referrer"
                           />
                           <div className="space-y-1 min-w-0">
-                            <span className="inline-block text-[8px] font-extrabold px-2 py-0.5 bg-blue-500/10 text-blue-400 rounded-full uppercase tracking-widest font-mono">
+                            <span className="inline-block text-[8px] font-extrabold px-2 py-0.5 bg-emerald-500/10 text-emerald-400 rounded-full uppercase tracking-widest font-mono">
                               {b.category}
                             </span>
-                            <h5 className="text-xs font-bold text-white line-clamp-1 leading-tight group-hover:text-blue-400 transition-colors truncate">
+                            <h5 className="text-xs font-bold text-white line-clamp-1 leading-tight group-hover:text-emerald-400 transition-colors truncate">
                               {b.title}
                             </h5>
                             <p className="text-[10px] text-slate-500 line-clamp-1 font-sans truncate">
@@ -1319,7 +1319,7 @@ export default function TeacherDashboard({
                           <button
                             type="button"
                             onClick={() => handleEditBlogClick(b)}
-                            className="p-1.5 border border-slate-800 text-slate-400 hover:text-blue-400 hover:border-blue-500/20 rounded-lg transition-all cursor-pointer"
+                            className="p-1.5 border border-slate-800 text-slate-400 hover:text-emerald-400 hover:border-emerald-500/20 rounded-lg transition-all cursor-pointer"
                             title="Sửa bài viết"
                           >
                             <svg

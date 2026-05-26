@@ -57,16 +57,16 @@ export default function LecturesPage({ lectures, onSelectLecture }: LecturesPage
         
         {/* Banner */}
         <div className="bg-[#060913] rounded-3xl p-6 sm:p-8 md:p-10 text-white relative overflow-hidden shadow-2xl text-left">
-          <div className="absolute top-0 right-0 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-20 -left-20 w-85 h-85 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 -left-20 w-85 h-85 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="relative z-10 max-w-3xl space-y-4">
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 border border-blue-500/20 text-blue-400">
-              <Sparkles className="w-3.5 h-3.5 mr-1.5 text-blue-400 animate-pulse" />
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+              <Sparkles className="w-3.5 h-3.5 mr-1.5 text-emerald-400 animate-pulse" />
               LỘ TRÌNH CHUYÊN SÂU BẢN QUYỀN
             </span>
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight font-display">
-              Kho Video <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Bài Giảng Bản Quyền</span> Thầy Nguyên
+              Kho Video <span className="bg-gradient-to-r from-emerald-400 to-emerald-500 bg-clip-text text-transparent">Bài Giảng Bản Quyền</span> Thầy Nguyên
             </h1>
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed font-sans">
               Chào mừng bạn đến với khu vực tự học thông qua kho tư liệu bài giảng số. Bạn có đặc quyền học không giới hạn toàn bộ chuyên đề ôn thi Toán vào 10 mới nhất, ôn thi tốt nghiệp THPT và chinh phục kỳ thi đánh giá tư duy lý thuyết VSAT độc quyền.
@@ -77,7 +77,7 @@ export default function LecturesPage({ lectures, onSelectLecture }: LecturesPage
         {/* Study Progress */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-md flex items-center space-x-4 text-left">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-650">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600">
               <Clock className="w-5 h-5" />
             </div>
             <div>
@@ -107,7 +107,7 @@ export default function LecturesPage({ lectures, onSelectLecture }: LecturesPage
           </div>
 
           <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-md flex items-center space-x-4 text-left">
-            <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-600">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
@@ -127,7 +127,7 @@ export default function LecturesPage({ lectures, onSelectLecture }: LecturesPage
               placeholder="Tìm kiếm nhanh tên video bài học..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-slate-50 border border-slate-100 focus:border-blue-500 rounded-xl pl-11 pr-4 py-3 placeholder-slate-400 text-xs text-slate-700 outline-none transition-all"
+              className="w-full bg-slate-50 border border-slate-100 focus:border-emerald-500 rounded-xl pl-11 pr-4 py-3 placeholder-slate-400 text-xs text-slate-700 outline-none transition-all"
             />
           </div>
 
@@ -155,7 +155,7 @@ export default function LecturesPage({ lectures, onSelectLecture }: LecturesPage
               onClick={() => setSelectedCategory(cat)}
               className={`px-4.5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap border ${
                 selectedCategory === cat
-                  ? 'bg-blue-600 border-blue-650 text-white shadow-md shadow-blue-650/15'
+                  ? 'bg-emerald-600 border-emerald-600 text-white shadow-md shadow-emerald-600/15'
                   : 'bg-white border-slate-150 text-slate-650 hover:border-slate-300 hover:bg-slate-50'
               }`}
             >
@@ -197,19 +197,19 @@ export default function LecturesPage({ lectures, onSelectLecture }: LecturesPage
                     {item.duration}
                   </span>
 
-                  <span className="absolute top-2.5 left-2.5 bg-[#2563eb] border border-blue-400/20 text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                  <span className="absolute top-2.5 left-2.5 bg-[#16a34a] border border-emerald-400/20 text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
                     {item.category}
                   </span>
 
                   <div className="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                    <span className="w-11 h-11 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg transform scale-90 group-hover:scale-100 transition-all duration-300">
+                    <span className="w-11 h-11 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg transform scale-90 group-hover:scale-100 transition-all duration-300">
                       <Play className="w-4 h-4 fill-current ml-0.5" />
                     </span>
                   </div>
                 </div>
 
                 <div className="p-4.5 flex-grow flex flex-col justify-between space-y-4 text-left">
-                  <h4 className="text-xs sm:text-sm font-extrabold text-slate-800 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug font-display">
+                  <h4 className="text-xs sm:text-sm font-extrabold text-slate-800 group-hover:text-emerald-600 transition-colors line-clamp-2 leading-snug font-display">
                     {item.title}
                   </h4>
 
@@ -226,7 +226,7 @@ export default function LecturesPage({ lectures, onSelectLecture }: LecturesPage
                       </span>
                     </div>
 
-                    <span className="text-[10px] font-bold text-blue-600 hover:underline">Học ngay</span>
+                    <span className="text-[10px] font-bold text-emerald-600 hover:underline">Học ngay</span>
                   </div>
                 </div>
               </div>

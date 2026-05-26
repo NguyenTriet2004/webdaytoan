@@ -151,7 +151,7 @@ export default function PaymentModal({
               </div>
               <div className="flex justify-between">
                 <span>Khóa học đăng ký:</span>
-                <span className="text-blue-400 font-bold">{course?.title}</span>
+                <span className="text-emerald-400 font-bold">{course?.title}</span>
               </div>
               <div className="flex justify-between">
                 <span>Tổng học phí:</span>
@@ -168,7 +168,7 @@ export default function PaymentModal({
             <div className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto pt-2">
               <button
                 onClick={handleZaloChatDirect}
-                className="flex-1 px-5 py-3 bg-[#0068ff] hover:bg-[#005cd4] rounded-xl text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-2 shadow-lg transition-all text-white cursor-pointer"
+                className="flex-1 px-5 py-3 bg-[#16a34a] hover:bg-[#15803d] rounded-xl text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-2 shadow-lg transition-all text-white cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4 fill-current" />
                 <span>Nhắn minh chứng qua Zalo</span>
@@ -197,7 +197,7 @@ export default function PaymentModal({
                 />
               </div>
               <div>
-                <span className="block text-[8px] uppercase tracking-widest font-mono font-bold text-blue-400 leading-none">
+                <span className="block text-[8px] uppercase tracking-widest font-mono font-bold text-emerald-400 leading-none">
                   CỔNG LIÊN KẾT NHẬP HỌC
                 </span>
                 <span className="block text-sm font-extrabold text-white font-display pt-0.5">
@@ -226,7 +226,7 @@ export default function PaymentModal({
                         placeholder="VD: Nguyễn Hoài Nam"
                         value={studentName}
                         onChange={(e) => setStudentName(e.target.value)}
-                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white placeholder-slate-705 outline-none focus:border-blue-500"
+                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white placeholder-slate-705 outline-none focus:border-emerald-500"
                       />
                     </div>
 
@@ -241,7 +241,7 @@ export default function PaymentModal({
                           placeholder="VD: 0912345678"
                           value={studentPhone}
                           onChange={(e) => setStudentPhone(e.target.value)}
-                          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white placeholder-slate-705 outline-none focus:border-blue-500"
+                          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white placeholder-slate-705 outline-none focus:border-emerald-500"
                         />
                       </div>
                       <div className="space-y-1">
@@ -253,7 +253,7 @@ export default function PaymentModal({
                           placeholder="VD: nam@gmail.com"
                           value={studentEmail}
                           onChange={(e) => setStudentEmail(e.target.value)}
-                          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white placeholder-slate-705 outline-none focus:border-blue-500"
+                          className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white placeholder-slate-705 outline-none focus:border-emerald-500"
                         />
                       </div>
                     </div>
@@ -283,7 +283,7 @@ export default function PaymentModal({
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full bg-blue-600 hover:bg-blue-500 active:scale-98 text-white font-bold py-3 text-xs rounded-xl shadow-lg shadow-blue-650/15 uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-1.5 font-sans"
+                        className="w-full bg-emerald-600 hover:bg-emerald-500 active:scale-98 text-white font-bold py-3 text-xs rounded-xl shadow-lg shadow-emerald-600/15 uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-1.5 font-sans"
                       >
                         <Send className="w-3.5 h-3.5" />
                         <span>Chuyển tiền xong, Gửi yêu cầu duyệt</span>
@@ -300,9 +300,9 @@ export default function PaymentModal({
                 <button
                   type="button"
                   onClick={handleZaloChatDirect}
-                  className="w-full bg-[#1e83ff]/10 hover:bg-[#1e83ff]/15 border border-[#1e83ff]/30 hover:border-[#1e83ff]/50 text-blue-400 font-bold py-3 text-xs rounded-xl uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-2"
+                  className="w-full bg-[#16a34a]/10 hover:bg-[#16a34a]/15 border border-[#16a34a]/30 hover:border-[#16a34a]/50 text-emerald-400 font-bold py-3 text-xs rounded-xl uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center space-x-2"
                 >
-                  <MessageCircle className="w-4 h-4 fill-current text-blue-400" />
+                  <MessageCircle className="w-4 h-4 fill-current text-emerald-400" />
                   <span>Gửi tin kích hoạt nhanh đến Zalo: 0945538554</span>
                 </button>
               </div>
@@ -314,7 +314,7 @@ export default function PaymentModal({
 
                   {/* Logo overlay on QR */}
                   <div className="absolute inset-0 m-auto w-10 h-10 bg-white border border-slate-100 rounded-lg flex items-center justify-center p-0.5 shadow">
-                    <div className="w-full h-full bg-blue-900 rounded-lg flex items-center justify-center text-[7px] font-black italic text-white leading-none">
+                    <div className="w-full h-full bg-emerald-900 rounded-lg flex items-center justify-center text-[7px] font-black italic text-white leading-none">
                       MBBank
                     </div>
                   </div>
@@ -340,7 +340,7 @@ export default function PaymentModal({
                       </span>
                       <button
                         onClick={() => handleCopy("0945538554")}
-                        className="p-1 hover:bg-slate-800 rounded text-blue-400 cursor-pointer"
+                        className="p-1 hover:bg-slate-800 rounded text-emerald-400 cursor-pointer"
                       >
                         <Clipboard className="w-3.5 h-3.5" />
                       </button>
@@ -355,14 +355,14 @@ export default function PaymentModal({
                   <div className="flex justify-between items-center">
                     <span className="text-slate-500">Nội dung CK</span>
                     <div className="flex items-center space-x-1">
-                      <span className="font-mono font-bold text-blue-400">
+                      <span className="font-mono font-bold text-emerald-400">
                         TOAN TN {studentPhone || "HP"}
                       </span>
                       <button
                         onClick={() =>
                           handleCopy(`TOAN TN ${studentPhone || "HP"}`)
                         }
-                        className="p-1 hover:bg-slate-800 rounded text-blue-400 cursor-pointer"
+                        className="p-1 hover:bg-slate-800 rounded text-emerald-400 cursor-pointer"
                       >
                         <Clipboard className="w-3.5 h-3.5" />
                       </button>
