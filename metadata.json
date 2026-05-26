@@ -1,0 +1,6 @@
+{
+  "name": "Toán Học Thầy Nguyên",
+  "description": "Nền tảng học Toán online số 1 dành cho học sinh THCS, THPT và luyện thi VSAT",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

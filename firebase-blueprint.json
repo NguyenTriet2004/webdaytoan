@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile representation for students and teachers",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "The firebase auth user ID" },
+        "name": { "type": "string", "description": "Full name of the user" },
+        "email": { "type": "string", "description": "User email address" },
+        "phone": { "type": "string", "description": "User contact number" },
+        "grade": { "type": "string", "description": "Math grade classification or role designation" }
+      },
+      "required": ["id", "name", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile metadata documents"
+    }
+  }
+}
