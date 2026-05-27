@@ -3,13 +3,13 @@ import {
   X,
   CheckCircle2,
   ShieldCheck,
-  QrCode,
   Clipboard,
   MessageCircle,
   Send,
 } from "lucide-react";
 import { Course } from "../types";
 import logoImg from "../assets/images/logo.png";
+import paymentQrImg from "../assets/images/qr-thanh-toan.jpg";
 
 interface PaymentModalProps {
   isOpen: boolean;
@@ -151,7 +151,9 @@ export default function PaymentModal({
               </div>
               <div className="flex justify-between">
                 <span>Khóa học đăng ký:</span>
-                <span className="text-emerald-400 font-bold">{course?.title}</span>
+                <span className="text-emerald-400 font-bold">
+                  {course?.title}
+                </span>
               </div>
               <div className="flex justify-between">
                 <span>Tổng học phí:</span>
@@ -310,14 +312,11 @@ export default function PaymentModal({
               {/* Right Column: Dynamic VietQR Canvas */}
               <div className="lg:col-span-6 flex flex-col items-center justify-center p-5 bg-slate-950/45 border border-slate-850 rounded-2xl lg:h-full relative overflow-hidden text-center">
                 <div className="relative p-3 bg-white rounded-2xl shadow-xl flex items-center justify-center border border-slate-100 select-none mx-auto mb-4">
-                  <QrCode className="w-40 h-40 text-slate-900" />
-
-                  {/* Logo overlay on QR */}
-                  <div className="absolute inset-0 m-auto w-10 h-10 bg-white border border-slate-100 rounded-lg flex items-center justify-center p-0.5 shadow">
-                    <div className="w-full h-full bg-emerald-900 rounded-lg flex items-center justify-center text-[7px] font-black italic text-white leading-none">
-                      MBBank
-                    </div>
-                  </div>
+                  <img
+                    src={paymentQrImg}
+                    alt="QR thanh toán"
+                    className="w-40 h-40 object-contain"
+                  />
                 </div>
 
                 <p className="text-emerald-400 font-mono font-bold text-base leading-none mb-4">
